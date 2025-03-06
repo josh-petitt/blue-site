@@ -1,1 +1,158 @@
 <h1>Yellow Blue</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue</title>
+    <style>
+        body {
+            background-color: linear-gradient(to right, #87CEEB, #2575fc); ; /* Sky Blue */
+            color: white; /* Ensures text is readable on dark backgrounds */
+            font-family: Arial, sans-serif; /* Clean, modern font */
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif; /* Modern, sans-serif font */
+            color: #4169E1; /* Royal Blue */
+            letter-spacing: 1px; /* Adds some spacing between letters */
+        }
+
+        p {
+            font-family: 'Arial', sans-serif; /* Simpler font for body text */
+            line-height: 1.6; /* More space between lines of text */
+            font-size: 18px;
+        }
+
+        .container {
+            border-radius: 10px; /* Softens edges */
+            overflow: hidden; /* Keeps the content within rounded corners */
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        a {
+            color: #2575fc; /* Blue Link Color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #6a11cb; /* Purple on Hover */
+        }
+
+        img {
+            width: 100%; /* Responsive Images */
+            border-radius: 8px;
+            transition: transform 0.3s ease; /* Smooth zoom effect */
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Zoom effect */
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        nav {
+            background-color: #4169E1;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #2f2f2f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #87CEEB; /* Light Blue Color */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff; /* White on hover */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        body {
+            animation: fadeIn 2s ease-in;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px; /* Adjust font size for mobile */
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to Blue</h1>
+
+        <div class="card">
+            <h2>Safety Third</h2>
+            <p>Security meh?</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Blue | <a href="#">No Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
