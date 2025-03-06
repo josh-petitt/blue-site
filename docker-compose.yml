@@ -47,3 +47,7 @@ services:
       - "9997:9997"
     volumes:
       - splunk-data:/opt/splunk/var
+
+volumes:
+  db-data:
+  splunk-data:
